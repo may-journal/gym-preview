@@ -120,6 +120,33 @@ nav button[aria-current="page"] {
   gap: 14px;
   margin: 22px 0;
 }
+.provenance {
+  display: grid;
+  grid-template-columns: auto minmax(260px, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  margin: 16px 0 -6px;
+  padding: 13px 16px;
+  border: 1px solid #31536b;
+  border-radius: 13px;
+  background: #10202b;
+}
+.provenance small,
+.provenance b {
+  display: block;
+}
+.provenance small {
+  color: var(--live);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+.provenance p,
+.provenance span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  margin: 0;
+}
 .summary article,
 .panel {
   background: linear-gradient(145deg, #151c24, #0f141a);
@@ -464,6 +491,9 @@ footer {
   .panelhead {
     align-items: flex-start;
     flex-direction: column;
+  }
+  .provenance {
+    grid-template-columns: 1fr;
   }
 }
 @media (prefers-reduced-motion: no-preference) {
