@@ -8,7 +8,7 @@ on:
     types: [closed]
 jobs:
   close-check:
-    uses: may-journal/fitness-runner/.github/workflows/close-check-reusable.yml@main
+    uses: may-journal/fitness-runner/.github/workflows/close-check-reusable.yml@v1
     permissions:
       contents: read
       issues: write
